@@ -2125,6 +2125,7 @@ select {
 
 .modal-custom-window {
   background: #0b1c2d;
+  color-scheme: dark;
   border: 1px solid var(--color-gold);
   border-radius: var(--radius-lg);
   max-width: 600px;
@@ -2225,6 +2226,29 @@ select {
   border-color: var(--color-gold);
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 0 3px rgba(217, 154, 36, 0.2);
+}
+
+/* Ensure select dropdown options are clearly visible on dark background */
+select.form-control-custom {
+  color-scheme: dark;
+  background-color: #0b1c2d;
+  cursor: pointer;
+}
+
+select.form-control-custom option {
+  background-color: #0b1c2d;
+  color: #ffffff;
+  padding: 10px 14px;
+}
+
+select.form-control-custom option:disabled {
+  color: #94a3b8;
+}
+
+select.form-control-custom option:hover,
+select.form-control-custom option:checked {
+  background-color: #071522;
+  color: var(--color-gold-light);
 }
 
 /* ==========================================================================
