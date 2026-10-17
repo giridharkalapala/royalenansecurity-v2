@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Enan Security Services | Security Beyond Expectations</title>
+  <meta name="description"
+    content="Royal Enan Security Services provides professional, reliable, and customized 24/7 security solutions across India. ISO 9001:2015 Certified security agency for industrial, corporate, retail, and residential premises.">
+  <meta name="keywords"
+    content="Royal Enan Security Services, security guards Hyderabad, corporate security India, industrial security, CCTV surveillance, 24/7 security guard agency, ISO 9001:2015 certified">
+  <meta name="author" content="Royal Enan Security Services">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+  <!-- Resource Preload for LCP Candidate -->
+  <link rel="preload" href="assets/images/hero-security.jpg" as="image" fetchpriority="high">
+
+  <!-- Google Fonts: Montserrat (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Bootstrap 5.3.3 Grid & Utilities -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. Header & Navigation (Matches Screenshot Exactly)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-xl">
+      <div class="header-container">
+
+        <!-- Left: Brand Logo & Title -->
+        <a href="index.html" class="brand-link" id="headerBrandLink" aria-label="Royal Enan Security Services Homepage">
+          <img src="assets/images/logo.png" alt="Royal Enan Security Services Crest Logo" class="brand-logo-img">
+
+        </a>
+
+        <!-- Center: Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link-custom active" id="navHome">Home</a>
+          <a href="#about" class="nav-link-custom" id="navAbout">About Us</a>
+          <a href="#services" class="nav-link-custom" id="navServices">Services</a>
+          <a href="#clients" class="nav-link-custom" id="navClients">Clients</a>
+          <a href="#contact" class="nav-link-custom" id="navContact">Contact Us</a>
+        </nav>
+
+        <!-- Right: Actions (Search, Phone, Get a Quote) -->
+        <div class="header-actions">
+
+
+          <a href="tel:+918096947362" class="header-phone-box" id="headerPhoneLink" aria-label="Call +91 8096947362">
+            <div class="phone-icon-circle">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="phone-text-meta">
+              <span class="phone-label">Have any questions?</span>
+              <span class="phone-number">+91 8096947362</span>
+            </div>
+          </a>
+
+          <button class="btn btn-gold header-btn-quote" id="headerQuoteBtn" data-open-modal="quoteModal">
+            Get a Quote <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open mobile navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-link">
+        <img src="assets/images/logo.png" alt="Royal Enan Logo" style="width: 42px; height: 42px;">
+        <span class="brand-name" style="font-size: 1rem;">Royal Enan</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close mobile menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About Us</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#clients" class="mobile-nav-link">Clients</a>
+      <a href="#contact" class="mobile-nav-link">Contact Us</a>
+    </div>
+
+    <div class="pt-3 border-top border-secondary">
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <div class="phone-icon-circle">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <div class="text-white-50 small">Call Us 24/7</div>
+          <a href="tel:+918096947362" class="text-white fw-bold">+91 8096947362</a>
+        </div>
+      </div>
+      <button class="btn btn-gold w-100" data-open-modal="quoteModal">
+        Get a Free Quote <i class="fa-solid fa-arrow-right ms-2"></i>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         2. Hero Section (Matches Screenshot Exactly)
+         ========================================================================= -->
+    <section class="hero-section" id="heroSection">
+      <!-- Background Slides (3 Slides) -->
+      <div class="hero-slider-container">
+        <div class="hero-slide active" style="background-image: url('assets/images/hero-security.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/service-building.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/hero-slide-4.jpg');"></div>
+      </div>
+
+      <!-- Gradient Overlays -->
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+
+      <!-- Futuristic Radar Arc on Right (Matches Reference) -->
+      <div class="hero-radar-glow"></div>
+
+      <!-- Guard Priority Text Badge (Matches Reference "+ YOUR SAFETY OUR PRIORITY") -->
+      <div class="hero-guard-priority-badge d-none d-lg-block">
+        <div class="priority-badge-content">
+          <i class="fa-solid fa-plus priority-cross-icon"></i>
+          <div class="priority-text">
+            YOUR<br>SAFETY<br>OUR<br>PRIORITY
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide Nav Indicators on Far Right (01, 02, 03) -->
+      <div class="hero-slider-nav-indicators d-none d-md-flex">
+        <button class="slider-nav-item active" data-slide="0" aria-label="Go to Slide 01">01</button>
+        <button class="slider-nav-item" data-slide="1" aria-label="Go to Slide 02">02</button>
+        <button class="slider-nav-item" data-slide="2" aria-label="Go to Slide 03">03</button>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="container-xl position-relative">
+        <div class="hero-content-wrapper">
+          <div class="hero-text-col" data-aos="fade-right" data-aos-duration="900">
+
+            <div class="hero-eyebrow">
+              SAFETY TODAY <span class="dot">•</span> A SECURE TOMORROW
+            </div>
+
+            <h1 class="hero-title">
+              Security Beyond
+              <span class="accent">Expectations</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Professional security solutions to safeguard your people, assets and premises — 24/7.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#quote" class="btn btn-gold" id="heroCtaConsultation" data-open-modal="quoteModal">
+                Get a Free Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <button class="btn-video-hero" id="heroBtnWatchVideo" data-open-modal="videoModal">
+                <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+                Watch Video
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Translucent Dark Bottom Feature Ribbon (4 Items) -->
+      <div class="hero-feature-ribbon">
+        <div class="container-xl">
+          <div class="feature-ribbon-grid">
+
+            <div class="feature-ribbon-item">
+              <div class="ribbon-icon-circle">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <div class="ribbon-text">
+                <span class="ribbon-title">24/7</span>
+                <span class="ribbon-sub">Surveillance</span>
+              </div>
+            </div>
+
+            <div class="feature-ribbon-item">
+              <div class="ribbon-icon-circle">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <div class="ribbon-text">
+                <span class="ribbon-title">Trained & Verified</span>
+                <span class="ribbon-sub">Professionals</span>
+              </div>
+            </div>
+
+            <div class="feature-ribbon-item">
+              <div class="ribbon-icon-circle">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <div class="ribbon-text">
+                <span class="ribbon-title">Pan India</span>
+                <span class="ribbon-sub">Service Network</span>
+              </div>
+            </div>
+
+            <div class="feature-ribbon-item">
+              <div class="ribbon-icon-circle">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="ribbon-text">
+                <span class="ribbon-title">Customized</span>
+                <span class="ribbon-sub">Security Plans</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. About Us Section (Matches Screenshot Exactly)
+         ========================================================================= -->
+    <section class="about-section" id="about">
+      <!-- Background Faded Watermark Emblem -->
+      <div class="about-watermark-bg"></div>
+
+      <div class="container-xl position-relative">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Asymmetric Image Collage with Gold Overlapping Card -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <div class="about-collage-container">
+              <!-- Decorative Gold Corner Accent -->
+              <div class="about-corner-accent"></div>
+
+              <div class="collage-grid">
+                <!-- Large Guard Image (Top-Left) -->
+                <div class="collage-item collage-guard">
+                  <img src="assets/images/about-security-guard.jpg"
+                    alt="Professional security officer with walkie-talkie" loading="lazy">
+                </div>
+
+                <!-- CCTV Wall Monitoring Room (Top-Right) -->
+                <div class="collage-item collage-cctv">
+                  <img src="assets/images/about-security-cctv.jpg"
+                    alt="Security guard monitoring video surveillance screens" loading="lazy">
+                </div>
+
+                <!-- Modern Bullet CCTV Camera (Bottom-Right) -->
+                <div class="collage-item collage-camera">
+                  <img src="assets/images/about-security-camera.jpg" alt="Modern CCTV security surveillance camera"
+                    loading="lazy">
+                </div>
+              </div>
+
+              <!-- Overlapping Gold Card (Matches Reference "10+ Years Of Excellence") -->
+              <div class="about-excellence-badge">
+                <span class="excellence-num">10+</span>
+                <span class="excellence-label">Years Of<br>Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Content & Statistics -->
+          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="800">
+            <div class="about-content-col">
+
+              <div class="section-eyebrow">ABOUT US</div>
+
+              <h2 class="section-title">
+                Delivering Reliable Security Solutions Across India
+              </h2>
+
+              <p class="about-desc">
+                At Royal Enan Security Services, we are committed to providing professional, reliable and customized
+                security solutions to ensure the safety of individuals, businesses, communities and public spaces.
+              </p>
+
+              <!-- 4 Statistics Counters -->
+              <div class="about-stats-row" id="aboutStatsRow">
+                <div class="stat-item">
+                  <span class="stat-number stat-count" data-target="500" data-suffix="+">500+</span>
+                  <span class="stat-label">Trained Professionals</span>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number stat-count" data-target="100" data-suffix="+">100+</span>
+                  <span class="stat-label">Happy Clients</span>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number stat-count" data-target="10" data-suffix="+">10+</span>
+                  <span class="stat-label">Years of Experience</span>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Security Support</span>
+                </div>
+              </div>
+
+              <!-- Actions: Know More & ISO Badge Button -->
+              <div class="about-btn-group">
+                <a href="#services" class="btn btn-gold" id="aboutBtnKnowMore">
+                  Know More About Us <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="btn-iso-pill" data-open-modal="isoModal" id="aboutBtnIsoCert"
+                  title="View Certified Registration">
+                  <i class="fa-solid fa-certificate text-warning"></i>
+                  <span>ISO 9001:2015 Certified</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Services Section (6 Tall Cards in 1 Row on Desktop)
+         ========================================================================= -->
+    <section class="services-section" id="services">
+      <div class="container-xl">
+
+        <!-- Section Header Row -->
+        <div class="services-header-row" data-aos="fade-up">
+          <div class="services-header-left">
+            <div class="section-eyebrow">OUR SERVICES</div>
+            <h2 class="section-title">
+              Complete Security Solutions for Every Need
+            </h2>
+          </div>
+
+          <div class="services-header-right">
+            <p>
+              From corporate offices to residential communities, we offer a wide range of security services tailored to
+              your unique requirements.
+            </p>
+            <a href="#contact" class="view-all-services-link">
+              View All Services <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6 Image Service Cards Grid (Matches Reference Proportions) -->
+        <div class="services-grid-row">
+
+          <!-- Card 1: Industrial Security Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+            <img src="assets/images/service-industrial.jpg" alt="Industrial Security Services" class="service-card-bg"
+              loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <h3 class="service-card-title">Industrial Security Services</h3>
+              <p class="service-card-desc">Securing your industrial premises with trained professionals.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Industrial Security">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Corporate Security Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/images/service-corporate.jpg" alt="Corporate Security Services" class="service-card-bg"
+              loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-building-shield"></i>
+              </div>
+              <h3 class="service-card-title">Corporate Security Services</h3>
+              <p class="service-card-desc">Professional security solutions for corporate offices.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Corporate Security">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Mall & Retail Security Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/images/service-retail.jpg" alt="Mall & Retail Security Services" class="service-card-bg"
+              loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <h3 class="service-card-title">Mall & Retail Security Services</h3>
+              <p class="service-card-desc">Ensure a safe shopping environment for your customers.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Mall Security">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Hotel & Residential Security Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/images/service-residential.jpg" alt="Hotel & Residential Security Services"
+              class="service-card-bg" loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <h3 class="service-card-title">Hotel & Residential Security Services</h3>
+              <p class="service-card-desc">Protect your residential communities and gated properties.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Hotel Security">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Hospital Security Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+            <img src="assets/images/service-hospital.jpg" alt="Hospital Security Services" class="service-card-bg"
+              loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-hospital"></i>
+              </div>
+              <h3 class="service-card-title">Hospital Security Services</h3>
+              <p class="service-card-desc">Trained security personnel for hospitals and healthcare facilities.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Hospital Security">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Building Protection Services -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/images/service-building.jpg" alt="Building Protection Services" class="service-card-bg"
+              loading="lazy">
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-city"></i>
+              </div>
+              <h3 class="service-card-title">Building Protection Services</h3>
+              <p class="service-card-desc">Comprehensive security for commercial and public buildings.</p>
+              <div class="service-card-arrow-circle" aria-label="Explore Building Protection">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Why Choose Us Section (Dark Navy, Center Guard with Halo, 4 Cards)
+         ========================================================================= -->
+    <section class="why-section" id="why-us">
+      <div class="container-xl position-relative">
+        <div class="why-grid-layout">
+
+          <!-- Left Column: Headings & Core Values Button -->
+          <div class="why-left-col" data-aos="fade-right">
+            <div class="section-eyebrow">WHY CHOOSE US</div>
+            <h2 class="section-title">
+              More Than Security<br>
+              <span class="gold-text-gradient">A Safer Tomorrow</span>
+            </h2>
+            <p class="section-desc">
+              We combine people, technology, and proven processes to deliver unmatched security services.
+            </p>
+            <a href="#contact" class="btn btn-gold" id="whyBtnCoreValues" data-open-modal="quoteModal">
+              Our Core Values <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Center Column: Guard with Luminous Gold Circular Halo -->
+          <div class="why-center-col" data-aos="zoom-in" data-aos-delay="100">
+            <div class="why-guard-halo"></div>
+            <div class="why-guard-image-box">
+              <img src="assets/images/why-choose-security.jpg"
+                alt="Confident Indian security guard officer with folded arms" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Dark Cards (2x2 Grid) -->
+          <div class="why-cards-grid" data-aos="fade-left" data-aos-delay="150">
+
+            <!-- Card 1 -->
+            <div class="why-card">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-id-badge"></i>
+              </div>
+              <h4 class="why-card-title">Verified & Trained Manpower</h4>
+              <p class="why-card-desc">Relied professionals you can trust.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="why-card">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <h4 class="why-card-title">Real-time Monitoring</h4>
+              <p class="why-card-desc">Advanced security technology.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="why-card">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <h4 class="why-card-title">Cost Effective Solutions</h4>
+              <p class="why-card-desc">Maximum safety within your budget.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="why-card">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h4 class="why-card-title">Pan India Coverage</h4>
+              <p class="why-card-desc">Security services across multiple cities.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Our Approach Section (Clean White, 4-Step Process, Faded CCTV)
+         ========================================================================= -->
+    <section class="approach-section" id="approach">
+      <!-- Faded CCTV Camera on Far Right (Matches Reference) -->
+      <div class="approach-cctv-accent d-none d-md-block"></div>
+
+      <div class="container-xl position-relative">
+
+        <div class="approach-header-box" data-aos="fade-up">
+          <div class="section-eyebrow">OUR APPROACH</div>
+          <h2 class="section-title">
+            A Smarter Way to Deliver Security
+          </h2>
+        </div>
+
+        <!-- 4 Steps Connected by Fine Arrows -->
+        <div class="approach-steps-row" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Step 01 -->
+          <div class="approach-step-card">
+            <div class="step-icon-circle">
+              <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <span class="step-number">01</span>
+            <h4 class="step-title">Understand</h4>
+            <span class="step-desc">Your Needs</span>
+          </div>
+
+          <div class="step-arrow-divider">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="approach-step-card">
+            <div class="step-icon-circle">
+              <i class="fa-solid fa-file-pen"></i>
+            </div>
+            <span class="step-number">02</span>
+            <h4 class="step-title">Plan &</h4>
+            <span class="step-desc">Customize</span>
+          </div>
+
+          <div class="step-arrow-divider">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="approach-step-card">
+            <div class="step-icon-circle">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <span class="step-number">03</span>
+            <h4 class="step-title">Deploy</h4>
+            <span class="step-desc">Professionals</span>
+          </div>
+
+          <div class="step-arrow-divider">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="approach-step-card">
+            <div class="step-icon-circle">
+              <i class="fa-solid fa-satellite-dish"></i>
+            </div>
+            <span class="step-number">04</span>
+            <h4 class="step-title">Monitor</h4>
+            <span class="step-desc">& Support</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Our Trusted Clients Section (White Logo Cards Carousel)
+         ========================================================================= -->
+    <section class="clients-section" id="clients">
+      <div class="container-xl">
+
+        <div class="clients-header-center" data-aos="fade-up">
+          <div class="section-eyebrow">OUR TRUSTED CLIENTS</div>
+          <h2 class="section-title">
+            Organizations That Trust Us
+          </h2>
+        </div>
+
+        <div class="clients-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <!-- Left Arrow Button -->
+          <button class="carousel-nav-btn" id="prevClientBtn" aria-label="Previous client logos">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <!-- Carousel Track -->
+          <div class="clients-carousel-track-container">
+            <div class="clients-carousel-track" id="clientsTrack">
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-1.png" alt="Signova" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-2.png" alt="Advanced Hair Studio" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-3.png" alt="Sobha Windsor" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-4.png" alt="Signature" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-5.png" alt="AngelOne" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-7.png" alt="Hyundai" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-8.png" alt="Asha Hospital" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-9.png" alt="Nayan Hardware" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-10.png" alt="Padmaraga" loading="lazy">
+              </div>
+
+              <div class="client-logo-card">
+                <img src="assets/images/clients/clients-logo-11.png" alt="Belief Hospital" loading="lazy">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Arrow Button -->
+          <button class="carousel-nav-btn" id="nextClientBtn" aria-label="Next client logos">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. Client Testimonial Section (Dark Skyline & Quote)
+         ========================================================================= -->
+    <section class="testimonial-section" id="testimonials">
+      <div class="container-xl position-relative">
+        <div class="testimonial-grid-row">
+
+          <!-- Left Column: Security Guard Looking Out at Night City Skyline -->
+          <div class="testimonial-guard-image-box" data-aos="fade-right">
+            <img src="assets/images/testimonial-security.jpg"
+              alt="Security officer looking over modern city skyline at dusk" loading="lazy">
+          </div>
+
+          <!-- Right Column: Heading, Quote, Author & 5 Stars -->
+          <div class="testimonial-content-col" data-aos="fade-left">
+
+            <div class="testimonial-header-nav">
+              <div class="section-eyebrow">CLIENT TESTIMONIAL</div>
+              <div class="testimonial-nav-arrows">
+                <button class="testim-arrow-btn" id="prevTestimBtn" aria-label="Previous testimonial">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="testim-arrow-btn" id="nextTestimBtn" aria-label="Next testimonial">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="testimonial-heading">
+              Trusted by Businesses Across Industries
+            </h3>
+
+            <div class="testimonial-quote-box">
+              <p class="testimonial-quote-text" id="testimonialQuoteText">
+                “Royal Enan Security Services has been our trusted security partner for over 3 years. Their team is
+                professional, responsive and always ensures the highest level of safety.”
+              </p>
+            </div>
+
+            <div class="testimonial-author-row">
+              <img src="assets/images/testimonial-avatar.jpg" alt="Ramesh Kumar" class="author-avatar-img"
+                id="testimonialAuthorAvatar">
+              <div class="author-info-block">
+                <span class="author-name" id="testimonialAuthorName">Ramesh Kumar</span>
+                <span class="author-role" id="testimonialAuthorRole">Facility Manager, Signova</span>
+              </div>
+              <div class="stars-rating" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. Gold CTA Banner (Angled Gold Gradient Banner Matching Reference)
+         ========================================================================= -->
+    <section class="cta-banner-wrapper" id="quote">
+      <div class="container-xl">
+        <div class="cta-banner-inner" data-aos="zoom-in">
+
+          <div class="cta-banner-left">
+            <h3 class="cta-banner-title">
+              Let's Build a Safer Environment Together
+            </h3>
+            <p class="cta-banner-desc">
+              Get in touch with us today for a customized security solution for your business or property.
+            </p>
+          </div>
+
+          <div class="cta-banner-right">
+            <button class="btn-cta-dark" data-open-modal="quoteModal">
+              Get a Free Quote
+              <span class="btn-arrow-circle">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       10. Footer Section (Matches Reference Exactly)
+       ========================================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container-xl">
+      <div class="footer-top-grid">
+
+        <!-- Column 1: Company Profile & Social Links -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo">
+            <img src="assets/images/logo.png" alt="Royal Enan Security Services Logo">
+          </div>
+          <p class="footer-brand-desc">
+            Royal Enan Security Services is a leading provider of comprehensive security solutions for industries,
+            corporate offices, residential communities, and more.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="#clients"><i class="fa-solid fa-chevron-right"></i> Clients</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Industrial Security</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Corporate Security</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Mall & Retail Security</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Hotel & Residential Security</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Hospital Security</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Building Protection</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-items">
+
+            <div class="footer-contact-item">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <a href="tel:+918096947362">+91 8096947362</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <a href="mailto:info@royalenansecurity.com">info@royalenansecurity.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-info-text">
+                <a href="mailto:hyderabad@royalenansecurity.com">hyderabad@royalenansecurity.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="contact-icon-circle">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                D.No 1-9-63/1/A/1 govt college, vidyanagar, Hyderabad 500044.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ISO Certification Badge Link in Footer -->
+          <div class="mt-3">
+            <button
+              class="btn btn-outline-warning btn-sm rounded-pill text-white py-1 px-3 d-inline-flex align-items-center gap-2"
+              data-open-modal="isoModal" style="border-color: var(--color-gold); font-size: 0.8rem;">
+              <i class="fa-solid fa-award text-warning"></i>
+              <span>ISO 9001:2015 Registered</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 <b class="text-white">Royal Enan Security Services</b>. All Rights Reserved. developed by <a
+            href="https://sunseaz.com" target="_blank" rel="noopener noreferrer" class="text-white fw-bold">Sunseaz</a>
+        </div>
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Floating 24/7 WhatsApp Quick Assistance
+       ========================================================================= -->
+  <a href="https://wa.me/918096947362?text=Hello%20Royal%20Enan%20Security%20Services%2C%20I%20would%20like%20to%20inquire%20about%20your%20security%20solutions." 
+     class="whatsapp-floating-btn" 
+     id="whatsappFloatingBtn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp with Royal Enan Security Services">
+    <div class="whatsapp-btn-pulse"></div>
+    <div class="whatsapp-btn-icon">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </a>
+
+  <!-- =========================================================================
+       11. Interactive Modals (ISO Certificate, Video, Quote Form, Search)
+       ========================================================================= -->
+
+  <!-- Modal 1: Authentic ISO 9001:2015 Certificate Viewer -->
+  <div class="modal-custom-backdrop" id="isoModal" role="dialog" aria-modal="true" aria-labelledby="isoModalTitle">
+    <div class="modal-custom-window" style="max-width: 650px;">
+      <div class="modal-window-header">
+        <h4 class="modal-window-title" id="isoModalTitle">
+          <i class="fa-solid fa-award text-warning me-2"></i> ISO 9001:2015 Registration
+        </h4>
+        <button class="modal-close-trigger" aria-label="Close ISO modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-window-body">
+        <div class="certificate-preview-box mb-3">
+          <img src="assets/images/iso-certificate.png"
+            alt="Official ISO 9001:2015 Certificate of Registration for Royal Enan Security Services">
+        </div>
+        <div class="small text-white-50 p-2 rounded bg-black">
+          <p class="mb-1"><strong class="text-warning">Organization:</strong> Royal Enan Security Services</p>
+          <p class="mb-1"><strong class="text-warning">Address:</strong> D No 1-9-63/1/A/1 vidyanagar, circle 29,
+            Hyderabad 500044</p>
+          <p class="mb-1"><strong class="text-warning">Certificate No:</strong> ICW-QCS-2024-5151133</p>
+          <p class="mb-0"><strong class="text-warning">Scope:</strong> Providing Security, House Keeping, Facility
+            Management and Staffing Services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Corporate Security Video Player -->
+  <div class="modal-custom-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="modal-custom-window" style="max-width: 720px;">
+      <div class="modal-window-header">
+        <h4 class="modal-window-title" id="videoModalTitle">
+          <i class="fa-solid fa-shield-halved text-warning me-2"></i> Corporate Security Overview
+        </h4>
+        <button class="modal-close-trigger" aria-label="Close Video modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-window-body">
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+          <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=0"
+            title="Royal Enan Security Presentation" allowfullscreen></iframe>
+        </div>
+        <p class="mt-3 text-muted small">
+          Discover how Royal Enan Security Services implements advanced surveillance, verified guarding manpower, and
+          rapid crisis management protocols.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Free Consultation & Quote Request -->
+  <div class="modal-custom-backdrop" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-custom-window" style="max-width: 540px;">
+      <div class="modal-window-header">
+        <h4 class="modal-window-title" id="quoteModalTitle">
+          <i class="fa-solid fa-clipboard-list text-warning me-2"></i> Request a Security Quote
+        </h4>
+        <button class="modal-close-trigger" aria-label="Close quote modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-window-body">
+        <form id="quoteConsultationForm">
+          <div class="form-group-custom">
+            <label for="quoteName" class="form-label-custom">Full Name *</label>
+            <input type="text" id="quoteName" class="form-control-custom" placeholder="e.g. Ramesh Kumar" required>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-md-6 form-group-custom">
+              <label for="quotePhone" class="form-label-custom">Phone Number *</label>
+              <input type="tel" id="quotePhone" class="form-control-custom" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="col-md-6 form-group-custom">
+              <label for="quoteEmail" class="form-label-custom">Email Address</label>
+              <input type="email" id="quoteEmail" class="form-control-custom" placeholder="name@company.com">
+            </div>
+          </div>
+
+          <div class="form-group-custom">
+            <label for="quoteService" class="form-label-custom">Required Security Service *</label>
+            <select id="quoteService" class="form-control-custom" required>
+              <option value="" disabled selected>Select a Service</option>
+              <option value="industrial">Industrial Security Services</option>
+              <option value="corporate">Corporate Security Services</option>
+              <option value="retail">Mall & Retail Security Services</option>
+              <option value="hotel">Hotel & Residential Security Services</option>
+              <option value="hospital">Hospital Security Services</option>
+              <option value="building">Building Protection Services</option>
+            </select>
+          </div>
+
+          <div class="form-group-custom">
+            <label for="quoteLocation" class="form-label-custom">Facility Location / City</label>
+            <input type="text" id="quoteLocation" class="form-control-custom" placeholder="e.g. Hyderabad, Telangana">
+          </div>
+
+          <div class="form-group-custom">
+            <label for="quoteMessage" class="form-label-custom">Brief Requirements</label>
+            <textarea id="quoteMessage" rows="3" class="form-control-custom"
+              placeholder="Number of guards, shift timings, specific premises details..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold w-100 mt-2">
+            Submit Quote Request <i class="fa-solid fa-paper-plane ms-2"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom Interaction Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
